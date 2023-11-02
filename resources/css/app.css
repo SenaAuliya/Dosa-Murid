@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .animated-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: background-animation 10s infinite linear;
+    background: url('https://t4.ftcdn.net/jpg/01/73/62/49/360_F_173624945_8pfAD4XWDJszG4rrzcPjqrj2pL9akxmi.jpg') repeat;
+  }
+  
+  @keyframes background-animation {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 100%;
+    }
+  }
+  
